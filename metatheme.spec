@@ -46,8 +46,8 @@ Static libraries with which to link when building plugins for the
 GNOME Metatheme Component.
 
 %description static -l pl
-Statyczne biblioteki z którymi mo¿na linkowaæ wtyczki dla komponentu
-GNOME Metatheme.
+Biblioteki statyczne, z którymi mo¿na konsolidowaæ wtyczki dla
+komponentu GNOME Metatheme.
 
 %prep
 %setup -q
