@@ -1,18 +1,18 @@
 Summary:	The GNOME Metatheme component
 Summary(pl):	Komponent GNOME Metatheme
 Name:		metatheme
-Version:	0.9.6
+Version:	0.9.7
 Release:	0.1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.gnome.org/pub/gnome/pre-gnome2/sources/%{name}/%{name}-%{version}.tar.bz2
-BuildRequires:	GConf2-devel
-BuildRequires:	libbonobo-devel
-BuildRequires:	libbonoboui-devel
-BuildRequires:	libglade2-devel
-BuildRequires:	libgnome-devel
-BuildRequires:	libgnomeui-devel
-BuildRequires:	nautilus-devel >= 1.1.13
+BuildRequires:	GConf2-devel >= 1.2.0
+BuildRequires:	libbonobo-devel >= 2.0.0
+BuildRequires:	libbonoboui-devel >= 2.0.0
+BuildRequires:	libglade2-devel >= 2.0.0
+BuildRequires:	libgnome-devel >= 2.0.1
+BuildRequires:	libgnomeui-devel >= 2.0.1
+BuildRequires:	nautilus-devel >= 2.0.0
 BuildRequires:	xmms-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
