@@ -2,18 +2,18 @@ Summary:	The GNOME Metatheme component
 Summary(pl):	Komponent GNOME Metatheme
 Name:		metatheme
 Version:	0.9.7
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/0.9/%{name}-%{version}.tar.bz2
 # Source0-md5:	bba39ec97ddd48f1e1b1f558bfabd6ae
 BuildRequires:	GConf2-devel >= 1.2.0
 BuildRequires:	libbonobo-devel >= 2.0.0
-BuildRequires:	libbonoboui-devel >= 2.0.0
+BuildRequires:	libbonoboui-devel >= 2.3.3-2
 BuildRequires:	libglade2-devel >= 2.0.0
 BuildRequires:	libgnome-devel >= 2.0.1
-BuildRequires:	libgnomeui-devel >= 2.0.1
-BuildRequires:	nautilus-devel >= 2.0.0
+BuildRequires:	libgnomeui-devel >= 2.3.3.1-2
+BuildRequires:	nautilus-devel >= 2.3.7-3
 BuildRequires:	xmms-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -59,7 +59,7 @@ GNOME Metatheme.
 %install
 rm -rf $RPM_BUILD_ROOT
 %{__make} install \
-        DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT
 
 %find_lang %{name} --with-gnome --all-name
 
