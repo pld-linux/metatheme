@@ -6,6 +6,7 @@ Release:	0.1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/0.9/%{name}-%{version}.tar.bz2
+# Source0-md5:	bba39ec97ddd48f1e1b1f558bfabd6ae
 BuildRequires:	GConf2-devel >= 1.2.0
 BuildRequires:	libbonobo-devel >= 2.0.0
 BuildRequires:	libbonoboui-devel >= 2.0.0
