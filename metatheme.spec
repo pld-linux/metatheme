@@ -17,7 +17,6 @@ BuildRequires:	nautilus-devel >= 2.0.0
 BuildRequires:	xmms-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-
 %description
 A theme control for GTK+, Sawfish, the Background and XMMS.
 
@@ -54,10 +53,7 @@ GNOME Metatheme.
 %setup -q
 
 %build
-if [ -f %{_pkgconfigdir}/libpng12.pc ] ; then
-        CPPFLAGS="`pkg-config libpng12 --cflags`"
-fi
-%configure CPPFLAGS="$CPPFLAGS"
+%configure
 %{__make}
 
 %install
@@ -83,15 +79,16 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_libdir}/metatheme/plugins/%{version}
 %attr(755,root,root) %{_libdir}/metatheme/plugins/%{version}/lib*.so.*.*
 %attr(755,root,root) %{_libdir}/metatheme/plugins/%{version}/lib*.??
-%{_datadir}/applications/*
 %{_datadir}/control-center-2.0/capplets/*
 %{_datadir}/metatheme-glade
 %{_datadir}/mime-info/*
-%{_datadir}/pixmaps/*.png
+%{_desktopdir}/*
+%{_pixmapsdir}/*.png
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/lib*.??
+%attr(755,root,root) %{_libdir}/lib*.so
+%{_libdir}/lib*.la
 %{_includedir}/mtm
 
 %files static
