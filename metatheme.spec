@@ -5,7 +5,7 @@ Version:	0.9.7
 Release:	0.1
 License:	GPL
 Group:		X11/Applications
-Source0:	ftp://ftp.gnome.org/pub/gnome/pre-gnome2/sources/%{name}/%{name}-%{version}.tar.bz2
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/0.9/%{name}-%{version}.tar.bz2
 BuildRequires:	GConf2-devel >= 1.2.0
 BuildRequires:	libbonobo-devel >= 2.0.0
 BuildRequires:	libbonoboui-devel >= 2.0.0
