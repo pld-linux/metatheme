@@ -1,4 +1,5 @@
 Summary:	The GNOME Metatheme component
+Summary(pl):	Komponent GNOME Metatheme
 Name:		metatheme
 Version:	0.9.6
 Release:	0.1
@@ -20,22 +21,34 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A theme control for GTK+, Sawfish, the Background and XMMS.
 
+%description -l pl
+Kontrola motywów dla GTK+, Sawfisha, XMMS oraz t³a.
+
 %package devel
-Group:		X11/Development/Libraries
 Summary:	Header files for use with the GNOME Metatheme Component
+Summary(pl):	Pliki nag³ówkowe do komponentu GNOME Metatheme
+Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}
 
 %description devel
 The headers for creating the GNOME Metatheme Component plugins.
 
+%description devel -l pl
+Pliki nag³ówkowe do tworzenia wtyczek dla komponentu GNOME Metatheme.
+
 %package static
+Summary:	GNOME Metatheme Component static libraries
+Summary(pl):	Statyczne biblioteki komponentu GNOME Metatheme
 Group:		X11/Development/Libraries
-Summary:	The development files for use with the GNOME Metatheme Component
 Requires:	%{name}-devel = %{version}
 
 %description static
-Staic libraries with which to link when building plugins for the GNOME 
-Metatheme Component.
+Static libraries with which to link when building plugins for the
+GNOME Metatheme Component.
+
+%description static -l pl
+Statyczne biblioteki z którymi mo¿na linkowaæ wtyczki dla komponentu
+GNOME Metatheme.
 
 %prep
 %setup -q
