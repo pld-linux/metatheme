@@ -16,7 +16,6 @@ BuildRequires:	nautilus-devel >= 2.0.0
 BuildRequires:	xmms-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define         _prefix         /usr/X11R6
 
 %description
 A theme control for GTK+, Sawfish, the Background and XMMS.
