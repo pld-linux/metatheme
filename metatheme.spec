@@ -82,7 +82,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/control-center-2.0/capplets/*
 %{_datadir}/metatheme-glade
 %{_datadir}/mime-info/*
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{_pixmapsdir}/*.png
 
 %files devel
