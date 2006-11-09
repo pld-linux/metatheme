@@ -5,7 +5,7 @@ Version:	0.9.7
 Release:	0.2
 License:	GPL
 Group:		X11/Applications
-Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/0.9/%{name}-%{version}.tar.bz2
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/metatheme/0.9/%{name}-%{version}.tar.bz2
 # Source0-md5:	bba39ec97ddd48f1e1b1f558bfabd6ae
 BuildRequires:	GConf2-devel >= 1.2.0
 BuildRequires:	libbonobo-devel >= 2.0.0
@@ -27,7 +27,7 @@ Kontrola motywów dla GTK+, Sawfisha, XMMS oraz t³a.
 Summary:	Header files for use with the GNOME Metatheme Component
 Summary(pl):	Pliki nag³ówkowe do komponentu GNOME Metatheme
 Group:		X11/Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 The headers for creating the GNOME Metatheme Component plugins.
@@ -39,7 +39,7 @@ Pliki nag³ówkowe do tworzenia wtyczek dla komponentu GNOME Metatheme.
 Summary:	GNOME Metatheme Component static libraries
 Summary(pl):	Statyczne biblioteki komponentu GNOME Metatheme
 Group:		X11/Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libraries with which to link when building plugins for the
