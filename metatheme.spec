@@ -1,5 +1,5 @@
 Summary:	The GNOME Metatheme component
-Summary(pl.UTF-8):   Komponent GNOME Metatheme
+Summary(pl.UTF-8):	Komponent GNOME Metatheme
 Name:		metatheme
 Version:	0.9.7
 Release:	0.2
@@ -25,7 +25,7 @@ Kontrola motywów dla GTK+, Sawfisha, XMMS oraz tła.
 
 %package devel
 Summary:	Header files for use with the GNOME Metatheme Component
-Summary(pl.UTF-8):   Pliki nagłówkowe do komponentu GNOME Metatheme
+Summary(pl.UTF-8):	Pliki nagłówkowe do komponentu GNOME Metatheme
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -37,7 +37,7 @@ Pliki nagłówkowe do tworzenia wtyczek dla komponentu GNOME Metatheme.
 
 %package static
 Summary:	GNOME Metatheme Component static libraries
-Summary(pl.UTF-8):   Statyczne biblioteki komponentu GNOME Metatheme
+Summary(pl.UTF-8):	Statyczne biblioteki komponentu GNOME Metatheme
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
