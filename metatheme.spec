@@ -3,9 +3,9 @@ Summary(pl.UTF-8):	Komponent GNOME Metatheme
 Name:		metatheme
 Version:	0.9.7
 Release:	0.2
-License:	GPL
+License:	GPL v2+
 Group:		X11/Applications
-Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/metatheme/0.9/%{name}-%{version}.tar.bz2
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/metatheme/0.9/%{name}-%{version}.tar.bz2
 # Source0-md5:	bba39ec97ddd48f1e1b1f558bfabd6ae
 BuildRequires:	GConf2-devel >= 1.2.0
 BuildRequires:	libbonobo-devel >= 2.0.0
